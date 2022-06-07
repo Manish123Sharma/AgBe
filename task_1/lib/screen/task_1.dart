@@ -19,10 +19,8 @@ class _Task_1State extends State<Task_1> {
  @override
    Widget build(BuildContext context) {
    return Scaffold(
-      appBar: AppBar(  
-        centerTitle: true,
-         backgroundColor: Colors.white,
-        title: Text('Contact List',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),), 
+      appBar: AppBar(
+        title: Text('Contact List',style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 162, 9, 9)),), 
       ),
      body: Container(child: Padding(
        padding: const EdgeInsets.all(8.0),
