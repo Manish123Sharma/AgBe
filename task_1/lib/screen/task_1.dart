@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../model/Contact.dart';
+import '../model/Contacts.dart';
 
 const darkBlueColor = Color(0xff486579);
 class Task_1 extends StatefulWidget {
@@ -10,8 +10,8 @@ class Task_1 extends StatefulWidget {
 }
 
 class _Task_1State extends State<Task_1> {
-  late Contact _contact;
-  List<Contact> _contacts = [];
+  late Contacts _contact;
+  List<Contacts> _contacts = [];
   final _formKey = GlobalKey<FormState>();
   TextEditingController _ctrlMobile = TextEditingController();
   TextEditingController _ctrlName = TextEditingController();
@@ -75,7 +75,7 @@ class _Task_1State extends State<Task_1> {
   if (form!.validate()) {
     form.save();
    
-    _contacts.add(Contact(name: _ctrlName.text,mobile: _ctrlMobile.text));
+    _contacts.add(Contacts(Name: _ctrlName.text,phn: _ctrlMobile.text));
     print("phone number $_contacts");
     setState(() {
       
@@ -99,11 +99,11 @@ _list() => Expanded(
                     size: 40.0,
                   ),
                   title: Text(
-                    _contacts[index].name.toUpperCase(),
+                    _contacts[index].Name.toUpperCase(),
                     style: TextStyle(
                         color: darkBlueColor, fontWeight: FontWeight.bold),
                   ),
-                  subtitle: Text(_contacts[index].mobile),
+                  subtitle: Text(_contacts[index].phn),
                   onTap: () {},
                 ),
                 Divider(
