@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../model/Contacts.dart';
 
-const darkBlueColor = Color(0xff486579);
+class Contacts{
+ String Name;
+ String phn;
+  Contacts({required this.Name, required this.phn});
+}
 class Task_1 extends StatefulWidget {
   
   @override
@@ -95,13 +98,11 @@ _list() => Expanded(
                 ListTile(
                   leading: Icon(
                     Icons.account_circle,
-                    color: darkBlueColor,
                     size: 40.0,
                   ),
                   title: Text(
                     _contacts[index].Name.toUpperCase(),
-                    style: TextStyle(
-                        color: darkBlueColor, fontWeight: FontWeight.bold),
+                    style: TextStyle( fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text(_contacts[index].phn),
                   onTap: () {},
