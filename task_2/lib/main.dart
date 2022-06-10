@@ -23,8 +23,7 @@ class Home extends ConsumerWidget {
     Size deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-            child: Text("Contact List")),
+        title: Text('Contact List',style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 162, 9, 9)),), 
       ),
       body: SingleChildScrollView(
         child: Padding(
