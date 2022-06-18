@@ -66,7 +66,7 @@ class Home extends ConsumerWidget {
                           nameCtrl.clear();
                           numberCtrl.clear();
                         },
-                        child: Text("Submit"),
+                        child: Text(" Submit "),
                       )
                     ],
                   ),
