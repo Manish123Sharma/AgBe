@@ -61,13 +61,13 @@ class _task_4State extends State<task_4> {
           SizedBox(
             height: 40,
           ),
-          Text_Field("Message", tc, deviceSize),
+          Text_field("Message", tc, deviceSize),
           ElevatedButton(
             onPressed: () {
               _showNotificationWithSound();
             },
             style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 87, 131, 207)),
+                primary: Color.fromARGB(255, 92, 136, 211)),
             child: const Text(
               'SUBMIT',
               style: TextStyle(color: Color.fromARGB(255, 21, 20, 20)),
