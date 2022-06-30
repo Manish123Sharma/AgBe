@@ -5,13 +5,6 @@ class Text_field extends StatelessWidget {
   late TextEditingController msg;
   Size ds;
   Text_field(this.label, this.msg, this.ds);
-  // Text_field({
-  //   required String label,
-  //   required TextEditingController tc,
-  // }) {
-  //   this.label = label;
-  //   this.tc = tc;
-  // }
 
   @override
   Widget build(BuildContext context) {
